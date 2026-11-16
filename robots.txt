@@ -1,0 +1,22 @@
+# Restrict automatic AI search and training collection for this portfolio.
+User-agent: OAI-SearchBot
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: PerplexityBot
+Disallow: /Portfolio/
+
+# Anthropic user-requested retrieval, where supported.
+User-agent: Claude-User
+Disallow: /Portfolio/
+
+# Google AI product usage preference; this does not block Googlebot.
+User-agent: Google-Extended
+Disallow: /Portfolio/
+
+# Media search crawlers only. HTML, styles, scripts and visitors stay accessible.
+User-agent: Googlebot-Image
+User-agent: Googlebot-Video
+Disallow: /Portfolio/assets/projects/
+Disallow: /Portfolio/assets/hero/
+Disallow: /Portfolio/assets/thumbs/
